@@ -1,0 +1,33 @@
+{
+  "name": "barely-pm2",
+  "version": "0.0.1",
+  "description": "High level PM2 wrapper for nodejs and bare",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "pm2"
+  ],
+  "author": "supersuryaansh",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "bare-events": "^2.5.0",
+    "bare-fs": "^4.0.1",
+    "bare-path": "^3.0.0",
+    "bare-process": "^4.0.0",
+    "bare-tty": "^5.0.1",
+    "bare-utils": "^1.1.1",
+    "child_process": "npm:bare-process@^4.0.0",
+    "events": "npm:bare-events@^2.5.0",
+    "fs": "npm:bare-node-fs@^1.0.2",
+    "path": "npm:bare-path@^3.0.0",
+    "pm2": "^5.4.3",
+    "tty": "npm:bare-tty@^5.0.1",
+    "util": "npm:bare-utils@^1.1.1",
+    "which-runtime": "^1.2.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  }
+}
