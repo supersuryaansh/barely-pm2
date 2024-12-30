@@ -1,6 +1,6 @@
 # Barely-PM2
 
-This module provides a simple interface to manage processes using PM2 (Process Manager 2) in Node.js or Bare applications. It allows you to create, start, stop, list, and delete processes with ease.
+This module provides a simple interface to manage processes using PM2 (Process Manager 2) in Node.js applications. It allows you to create, start, stop, list, and delete processes with ease.
 
 ## Installation 
 
@@ -22,24 +22,26 @@ const { PM2list, PM2delete, PM2stop, PM2start, PM2create } = require('./path-to-
 Lists all PM2 processes.
 
 - opts.color: (boolean) Optional. If set to true, forces color output in the console.
+- opts.raw: (boolean) Optional. Don't use PM2 binary if set to false.
+- opts.name: (string) Optional. List only the processes string with the name.
 
 ### PM2delete(processName, exit)
 Deletes a specified PM2 process.
 
 - processName: (string) The name of the process to delete.
-- exit: (boolean) Exit the process after completion
+- exit: (boolean) Exit the process after completion.
 
 ### PM2stop(processName, exit)
 Stops a specified PM2 process.
 
 - processName: (string) The name of the process to stop.
-- exit: (boolean) Exit the process after completion
+- exit: (boolean) Exit the process after completion.
 
 ### PM2start(processName, exit)
 Starts a specified PM2 process.
 
 - processName: (string) The name of the process to start.
-- exit: (boolean) Exit the process after completion
+- exit: (boolean) Exit the process after completion.
 
 ### PM2create(opts = {})
 Creates and starts a new PM2 process.

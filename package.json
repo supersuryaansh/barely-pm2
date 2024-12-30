@@ -1,7 +1,7 @@
 {
   "name": "barely-pm2",
-  "version": "0.0.2",
-  "description": "High level PM2 wrapper for nodejs and bare",
+  "version": "0.0.3",
+  "description": "High level PM2 wrapper for nodejs",
   "main": "index.js",
   "scripts": {
     "test": "npm run test"
