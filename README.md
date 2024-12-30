@@ -23,20 +23,23 @@ Lists all PM2 processes.
 
 - opts.color: (boolean) Optional. If set to true, forces color output in the console.
 
-### PM2delete(processName)
+### PM2delete(processName, exit)
 Deletes a specified PM2 process.
 
 - processName: (string) The name of the process to delete.
+- exit: (boolean) Exit the process after completion
 
-### PM2stop(processName)
+### PM2stop(processName, exit)
 Stops a specified PM2 process.
 
 - processName: (string) The name of the process to stop.
+- exit: (boolean) Exit the process after completion
 
-### PM2start(processName)
+### PM2start(processName, exit)
 Starts a specified PM2 process.
 
 - processName: (string) The name of the process to start.
+- exit: (boolean) Exit the process after completion
 
 ### PM2create(opts = {})
 Creates and starts a new PM2 process.
@@ -45,6 +48,11 @@ Creates and starts a new PM2 process.
 - opts.script: (string) The script to run.
 - opts.args: (string) Arguments to pass to the script.
 - opts.timeout: (number) Optional. Timeout in milliseconds after which PM2 will disconnect.
+
+### PM2logs(processName)
+Display logs for the process
+
+- processName: (string) The name of the process to view logs for.
 
 ## Example
 
