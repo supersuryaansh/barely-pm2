@@ -1,6 +1,6 @@
 {
   "name": "barely-pm2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "High level PM2 wrapper for nodejs",
   "main": "index.js",
   "scripts": {
