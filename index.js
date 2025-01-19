@@ -42,7 +42,13 @@ function PM2list (opts = {}) {
     }
 
     // Utility function to pad strings
-    const pad = (str, width) => str.toString().padEnd(width)
+    const pad = (str, width) => {
+      return str !== undefined ? str.toString().padEnd(width) : str
+    }
+
+    // Example usage:
+    console.log(pad('Hello', 10)) // "Hello     "
+    console.log(pad(undefined, 10)) // undefined
 
     // Get terminal width
     const terminalWidth = process.stdout.columns || 80 // Default to 80 if undefined

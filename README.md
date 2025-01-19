@@ -13,7 +13,7 @@ npm i barely-pm2
 You can require this module in your Node.js / Bare application and use the provided functions to manage your PM2 processes.
 
 ```js
-const { PM2list, PM2delete, PM2stop, PM2start, PM2create } = require('./path-to-your-module');
+const { PM2list, PM2delete, PM2stop, PM2start, PM2create } = require('barely-pm2');
 ```
 
 ## API
@@ -61,7 +61,7 @@ Display logs for the process
 Here’s an example of how to use the module:
 
 ```js
-const { PM2list, PM2delete, PM2stop, PM2start, PM2create } = require('./');
+const { PM2list, PM2delete, PM2stop, PM2start, PM2create } = require('barely-pm2');
 
 PM2create({ name: 'New script', script: '/path/to/script', args: "--host localhost", timeout: 5000 });
 
