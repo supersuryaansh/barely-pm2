@@ -46,10 +46,6 @@ function PM2list (opts = {}) {
       return str !== undefined ? str.toString().padEnd(width) : str
     }
 
-    // Example usage:
-    console.log(pad('Hello', 10)) // "Hello     "
-    console.log(pad(undefined, 10)) // undefined
-
     // Get terminal width
     const terminalWidth = process.stdout.columns || 80 // Default to 80 if undefined
     const horizontalMinWidth = 100 // Minimum width required for horizontal display
